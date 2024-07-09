@@ -2,6 +2,12 @@
 
 This project is a network monitoring tool designed to capture and log network traffic data, providing insights into network activity for security and analysis purposes.
 
+## IMPORTANT NOTE
+In main.go, you may need to change this line depending on your OS. The line below works for MacOS. For other systems, please try "eth0" instead of "en0".
+```
+capture.StartCapture("en0", logger)
+```
+
 ## Features
 
 - Captures and logs network packets, including source and destination IP addresses, protocols, ports, and payload data.
